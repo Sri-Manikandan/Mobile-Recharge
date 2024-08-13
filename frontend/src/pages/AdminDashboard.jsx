@@ -67,7 +67,7 @@ const AdminDashboard = () => {
     }, [axiosInstance]);
 
     return (
-        <div className="flex min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+        <div className="flex flex-col md:flex-row min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
             <Sidebar />
             <main className="flex-1 p-6 space-y-8 overflow-auto">
                 <h1 className="text-4xl font-extrabold text-center bg-gradient-to-r from-red-700 via-orange-300 to-red-700 bg-clip-text text-transparent">

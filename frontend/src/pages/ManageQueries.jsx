@@ -61,10 +61,10 @@ const ManageQueries = () => {
               <tbody>
                 {queries.map(query => (
                   <tr key={query.id} className="bg-gray-900 hover:bg-gray-700 transition duration-300">
-                    <td className="border px-4 py-2 hidden md:table-cell">{query.name}</td>
-                    <td className="border px-4 py-2 hidden md:table-cell">{query.email}</td>
-                    <td className="border px-4 py-2">{query.message}</td>
-                    <td className="border px-4 py-2 flex justify-center">
+                    <td className="border px-4 py-3 hidden md:table-cell">{query.name}</td>
+                    <td className="border px-4 py-3 hidden md:table-cell">{query.email}</td>
+                    <td className="border px-4 py-3">{query.message}</td>
+                    <td className="border px-4 py-3 flex justify-center">
                       <button
                         className="bg-red-500 text-white py-1 px-3 rounded-lg hover:bg-red-600 transition duration-300"
                         onClick={() => onDelete(query.id)}

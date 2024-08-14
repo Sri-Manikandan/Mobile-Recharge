@@ -130,7 +130,7 @@ const AdminDashboard = () => {
                                         <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                                     ))}
                                 </Pie>
-                                <Tooltip contentStyle={{ backgroundColor: '#1a202c', border: 'none',color: 'white' }} />
+                                <Tooltip contentStyle={{ backgroundColor: '#ffffff', border: 'none' }} />
                             </PieChart>
                         </ResponsiveContainer>
                     </div>

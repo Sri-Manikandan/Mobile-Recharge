@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import heroImage from '../assets/image-2.jpg';
 import { UserContext } from '../context/UserContext';
+import Offers from '../components/Home/Offers';
 
 const Dashboard = () => {
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -70,7 +71,7 @@ const Dashboard = () => {
         </div>
       </div>
       <div className="py-12 px-8">
-        <h2 className="text-5xl font-semibold text-white text-center mb-8">Our Best Served Plans</h2>
+        <h2 className="text-5xl font-semibold bg-gradient-to-r from-red-700 via-orange-300 to-red-700 bg-clip-text text-transparent text-center mb-8">Our Best Served Plans</h2>
         <div className="max-w-6xl mx-auto overflow-x-scroll scrollbar-hidden flex gap-8 group-hover:blur-sm">
           <div className="bg-neutral-700 p-6 rounded-lg shadow-lg min-w-[255px]">
             <h3 className="text-2xl font-semibold mb-4 text-white text-center">Truly Unlimited</h3>
@@ -98,8 +99,9 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+      <Offers />
       <div className="py-12 bg-gradient-to-b from-black via-gray-950 to-gray-900 px-8">
-        <h2 className="text-5xl font-semibold text-center mb-8 text-white">Contact Us</h2>
+        <h2 className="text-5xl font-semibold text-center mb-8 bg-gradient-to-r from-red-700 via-orange-300 to-red-700 bg-clip-text text-transparent">Contact Us</h2>
         <div className="max-w-2xl mx-auto">
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
